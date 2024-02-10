@@ -3,8 +3,23 @@
     margin: 0;
 }
 .dark{
-
+    --text-color: white;
 }
 .light{
-    
+    --text-color: black;
+
+}
+body{
+    font-size: 16px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+p, a, span, li{
+    font-size: 1rem;
 }

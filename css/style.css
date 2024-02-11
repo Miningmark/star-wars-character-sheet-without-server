@@ -190,3 +190,32 @@
     text-align: center;
     margin: auto;
 }
+
+
+
+
+#talentsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#talentsSection h2{
+    font-size: 1.7rem;
+}
+.talents{
+    display: flex;
+    align-items: center;
+    width: 95vw;
+}
+.talentName, .talentBookPage{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+#inventorySection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

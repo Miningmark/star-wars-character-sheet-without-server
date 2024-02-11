@@ -162,3 +162,14 @@
 .obligation h3{
     padding-bottom: 5px;
 }
+
+
+
+#characterDescriptionSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.characterDescription{
+    width: 95vw;
+}

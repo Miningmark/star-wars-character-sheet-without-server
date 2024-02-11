@@ -81,3 +81,33 @@ p{
 .skillCareer, .skillRank{
     text-align: center;
 }
+
+
+
+#weaponSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weapons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.weapon{
+    border: solid 2px green;
+    width: 95vw;
+}
+.weapon h3{
+    text-align: center;
+}
+.weaponSkillStats{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.weaponSkillStats div{
+    border: solid 1px black;
+    margin: 5px;
+}

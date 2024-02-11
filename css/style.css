@@ -72,8 +72,9 @@ p{
 .skillsTable{
     width: 95vw;
     border: solid 1px red;
+    margin: 10px 0 10px 0;
 }
-.test{
+.skillsThead{
     border: solid 1px blue;
     width: 33%;
 }

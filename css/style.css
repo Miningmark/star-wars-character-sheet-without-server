@@ -219,3 +219,33 @@
     flex-direction: column;
     align-items: center;
 }
+.carryLimitAndMoney{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    margin: 10px 0 10px 0;
+}
+.carryLimitAndMoney p{
+    padding: 5px;
+}
+.carryLimitAndMoney{
+    width: 95vw;
+    background-color: aquamarine;
+}
+.inventory{
+    width: 95vw;
+}
+.inventoryLocation{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.inventoryLocation h3{
+    padding-bottom: 10px;
+}
+.itemActiveThead, .itemNameThead, .itemWeightThead, .itemQuantityThead{
+    border: solid 1px yellowgreen;
+}
+.itemActive, .itemWeight, .itemQuantity{
+    text-align: center;
+}

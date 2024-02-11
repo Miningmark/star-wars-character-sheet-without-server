@@ -10,6 +10,22 @@
     background-color: aqua;
 }
 
+#characterInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+}
+#characterInfo div{
+    margin: 10px;
+}
+#characterInfo div button{
+    padding: 5px;
+}
+
+
+
+
 #physicalStatsSection{
     display: flex;
     flex-direction: column;
@@ -27,13 +43,16 @@
     flex-direction: column;
     background-color: antiquewhite;
     border: solid 2px black;
-    width: 25%;
+    width: 20%;
 }
 .physicalStat p{
     text-align: center;
 }
+.physicalStatText{
+    font-size: 0.9rem;
+}
 .physicalStatInfo{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 #abilitiesSection{

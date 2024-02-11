@@ -19,30 +19,33 @@
     </header>
 
     <main>
-<!-- character-choice -->        
+<!-- load-character -->        
         <section id="character-choice">
 
         </section>
+<!-- new-character -->  
         <section id="character-new">
             
         </section>
-<!-- character -->        
+<!-- current-character -->        
         <section id="character-current">
             <div class="character">
-                <div class="characterInfo">
-                    <h2>Name</h2>
-                    <p>Species</p>
-                    <p>Career</p>
-                    <p>Specialization Trees</p>
-                    <p>XP</p>
-                    <button type="button">Edit</button>
+                <div id="characterInfo">
+                    <div>
+                        <h2>Name</h2>
+                        <p><span>Species</span>; <span>Career</span>; <span>Specialization Trees</span></p>
+                    </div>
+                    <div>
+                        <button type="button">Edit</button>
+                        <p>55/238</p>
+                    </div>
                 </div>
 <!-- physicalStatsSection -->                
                 <div id="physicalStatsSection">
                     <h2>physicalStats</h2>
                     <div class="physicalStats">
                         <div class="physicalStat">
-                            <p>Soak Value</p>
+                            <p class="physicalStatText">Soak Value</p>
                             <p>99</p>
                         </div>
                         <div class="physicalStat">
@@ -59,6 +62,11 @@
                             <p>Defense</p>
                             <p>66 99</p>
                             <p class="physicalStatInfo">Ranged/Melee</p>
+                        </div>
+                        <div class="physicalStat">
+                            <p>Force</p>
+                            <p>3</p>
+                            <p class="physicalStatInfo">Rating</p>
                         </div>
                     </div>
                 </div>

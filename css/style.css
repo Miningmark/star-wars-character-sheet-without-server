@@ -1,1 +1,82 @@
 @import url(general.css);
+
+.menuUL{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menuLI{
+    padding: 5px;
+    background-color: aqua;
+}
+
+#physicalStatsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.physicalStats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 95vw;
+}
+.physicalStat{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: solid 2px black;
+    width: 25%;
+}
+p{
+    text-align: center;
+}
+.physicalStatInfo{
+    font-size: 0.8rem;
+}
+
+#abilitiesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.abilities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.ability{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.abilityValue{
+    border: solid 1px black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+
+#skillsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsTable{
+    width: 95vw;
+    border: solid 1px red;
+}
+.test{
+    border: solid 1px blue;
+    width: 33%;
+}
+.skillCareer, .skillRank{
+    text-align: center;
+}

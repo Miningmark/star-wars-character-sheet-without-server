@@ -23,3 +23,7 @@ h2{
 p, a, span, li{
     font-size: 1rem;
 }
+li{
+    text-decoration: none;
+    list-style: none;
+}

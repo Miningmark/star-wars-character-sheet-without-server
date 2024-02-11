@@ -29,7 +29,7 @@
     border: solid 2px black;
     width: 25%;
 }
-p{
+.physicalStat p{
     text-align: center;
 }
 .physicalStatInfo{
@@ -61,6 +61,7 @@ p{
     height: 50px;
     width: 50px;
     line-height: 50px;
+    text-align: center;
 }
 
 
@@ -110,4 +111,54 @@ p{
 .weaponSkillStats div{
     border: solid 1px black;
     margin: 5px;
+}
+.weaponSkillStats div p{
+    text-align: center;
+}
+.weapon p{
+    text-align: center;
+}
+
+
+#motivationsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.motivations{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.motivation{
+    border: solid 1px Blue;
+    padding: 5px;
+}
+.motivation h3{
+    padding-bottom: 5px;
+}
+
+
+
+
+#obligationsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.obligations{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.obligation{
+    border: solid 1px purple;
+    padding: 5px;
+}
+.obligation h3{
+    padding-bottom: 5px;
 }

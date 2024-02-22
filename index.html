@@ -112,18 +112,11 @@
             <div class="newCharacterObligation">
                 <form action="submit" class="inputForm">
                     <legend>Mission / Obligation</legend>
-                    <label class="input">
-                        <input class="inputField" id="obligationType" type="text" placeholder=" " autocomplete="off" required/>
-                        <span class="inputLabel">Obligation Type:</span>
-                    </label>
-                    <label class="input">
-                        <input class="inputField" id="obligationValue" type="text" placeholder=" " autocomplete="off" required/>
-                        <span class="inputLabel">Obligation Value:</span>
-                    </label>                    
-                    <label class="input">
-                        <textarea class="inputField" id="obligationDescription" type="text" placeholder=" " autocomplete="off" required rows="5" cols="50"></textarea>
-                        <span class="inputLabel">Obligation Description:</span>
-                    </label>
+                    <button type="button" id="newObligation">add new Obligation</button>
+                    <div id="obligationInputForm">
+                        
+                    </div>               
+                    
                     <p>+ weitere hinzufügen wenn benötigt</p>
                     <button type="submit" id="descriptionButton">Next</button>
                 </form>

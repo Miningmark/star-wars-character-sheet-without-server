@@ -1,6 +1,6 @@
 
 
-export const determineBackground = [
+export const determineBackgrounds = [
     {
         key: "COMFORTABLEBENEFICIARIES",
         name: "Comfortable Beneficiaries",

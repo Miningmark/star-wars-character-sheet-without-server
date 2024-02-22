@@ -1,6 +1,21 @@
 import { hooks } from "../Data/hooks.js";
 import { attitudes } from "../Data/attitudes.js";
+import { determineBackgrounds } from "../Data/determineBackground.js";
 
+
+const determineBackgroundDropdown = document.getElementById("determineBackground");
+const determineBackgroundDescription = document.getElementById("determineBackgroundDescription");
+const determineBackgroundSource = document.getElementById("determineBackgroundSource");
+
+determineBackgrounds.forEach((determineBackground) => {
+    determineBackgroundDropdown.innerHTML += `<option value="${determineBackground.key}">${determineBackground.name}</option>`;
+})
+
+determineBackgroundDropdown.addEventListener("input", (event) => {
+    const input = event.target.value;
+    determineBackgroundDescription.textContent = determineBackgrounds.filter((determineBackground) => determineBackground.key === input).map((determineBackground) => determineBackground.description).join();
+    determineBackgroundSource.textContent = determineBackgrounds.filter((determineBackground) => determineBackground.key === input).map((determineBackground) => determineBackground.source).join();
+});
 
 
 const attitudeToForceDropdown = document.getElementById("attitudeToForce");
@@ -13,7 +28,6 @@ attitudes.forEach((attitude) => {
 
 attitudeToForceDropdown.addEventListener("input", (event) => {
     const input = event.target.value;
-    console.log(input);
     attitudeToForceDescription.textContent = attitudes.filter((attitude) => attitude.key === input).map((attitude) => attitude.description).join();
     attitudeToForceSource.textContent = attitudes.filter((attitude) => attitude.key === input).map((attitude) => attitude.source).join();
 });

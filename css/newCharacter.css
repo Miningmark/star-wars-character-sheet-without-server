@@ -1,7 +1,7 @@
 
 .inputForm {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 .input {
@@ -19,7 +19,7 @@
   white-space: nowrap;
   transform: translate(0, 0);
   transform-origin: 0 0;
-  background: blue;
+  background: var(--background-color1);
 }
 .inputField {
   box-sizing: border-box;
@@ -33,9 +33,9 @@
 .inputField:focus + .inputLabel,
 .inputField:not(:placeholder-shown) + .inputLabel {
   transform: translate(0.25rem, -65%) scale(0.8);
-  color: var(--main-brand-color);
+  color: var(--accent-color1);
 }
 .inputField:focus {
   outline: none;
-  border-color: blue;
+  border-color: var(--accent-color1);
 }

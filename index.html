@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SW Charactersheet</title>
     <link rel="stylesheet" href="/css/style.css">
+
+    <script type="module" src="./js/newCharacter.js" defer></script>
+
 </head>
-<body>
+<body class="dark">
 
     <header>
         <nav>
@@ -33,38 +36,38 @@
                         <span class="inputLabel">Character Name:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="gender" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="gender" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Gender:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="age" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="age" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Age:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="size" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="size" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Size:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="stature" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="stature" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Stature:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="hair" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="hair" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Hair:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="eyes" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="eyes" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Character Eyes:</span>
                     </label>
                     <label class="input">
-                        <textarea class="inputField" id="specialCharacteristics" type="text" placeholder=" " autocomplete="off" required rows="5" cols="50"></textarea>
+                        <textarea class="inputField" id="specialCharacteristics" type="text" placeholder=" " autocomplete="off" rows="5" cols="50"></textarea>
                         <span class="inputLabel">Character Special characteristics:</span>
                     </label>
                     <label class="input">
-                        <input class="inputField" id="startXP" type="text" placeholder=" " autocomplete="off" required/>
+                        <input class="inputField" id="startXP" type="text" placeholder=" " autocomplete="off"/>
                         <span class="inputLabel">Start XP:</span>
                     </label>
-                    <button type="submit">Next</button>
+                    <button type="submit" id="descriptionButton">Next</button>
                 </form>
             </div>
             <div class="newCharacterBackground">
@@ -74,19 +77,36 @@
                         <input class="inputField" id="background" type="text" placeholder=" " autocomplete="off" required/>
                         <span class="inputLabel">Background:</span>
                     </label>
-                    <label class="input">
-                        <input class="inputField" id="attitudeToForce" type="text" placeholder=" " autocomplete="off" required/>
-                        <span class="inputLabel">Attitude to Force:</span>
-                    </label>
-                    <label class="input">
-                        <input class="inputField" id="ReasonsForAdventure" type="text" placeholder=" " autocomplete="off" required/>
-                        <span class="inputLabel">Reasons for adventure:</span>
-                    </label>
+                    <fieldset>
+                        <legend>Attitude to Force</legend>
+                        <select id="attitudeToForce">
+                            <option value="">-SELECT OPTION-</option>
+                        </select>
+                        <p><strong>Description: </strong><span id="attitudeToForceDescription"></span></p>
+                        <p><strong>Sources: </strong><span id="attitudeToForceSource"></span></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Attitude to Force</legend>
+                        <select id="attitudeToForce">
+                            <option value="">-SELECT OPTION-</option>
+                        </select>
+                        <p><strong>Description: </strong><span id="attitudeToForceDescription"></span></p>
+                        <p><strong>Sources: </strong><span id="attitudeToForceSource"></span></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adventure Hook</legend>
+                        <select id="adventureHook">
+                            <option value="">-SELECT OPTION-</option>
+                        </select>
+                        <p><strong>Description: </strong><span id="adventureHookDescription"></span></p>
+                        <p><strong>Sources: </strong><span id="adventureHookSource"></span></p>
+                    </fieldset>
                     
                     <label class="input">
                         <textarea class="inputField" id="backgroundStory" type="text" placeholder=" " autocomplete="off" required rows="5" cols="50"></textarea>
                         <span class="inputLabel">Background Story:</span>
                     </label>
+                    <button type="submit" id="descriptionButton">Next</button>
                 </form>
             </div>
             <div class="newCharacterObligation">
@@ -105,6 +125,7 @@
                         <span class="inputLabel">Obligation Description:</span>
                     </label>
                     <p>+ weitere hinzufügen wenn benötigt</p>
+                    <button type="submit" id="descriptionButton">Next</button>
                 </form>
             </div>
             <div class="newCharacterSpecies">

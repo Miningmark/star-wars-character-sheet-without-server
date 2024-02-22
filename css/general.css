@@ -4,6 +4,10 @@
 }
 .dark{
     --text-color: white;
+    --background-color1: #202020;
+    --background-color2: #303030;
+    --accent-color1: rgb(174, 0, 0);
+    --accent-color1: rgb(103, 0, 0);
 }
 .light{
     --text-color: black;
@@ -11,19 +15,28 @@
 }
 body{
     font-size: 16px;
+    background-color: var(--background-color1);
 }
 h1{
     font-size: 3rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 h2{
     font-size: 2rem;
     font-weight: bold;
+    color: var(--text-color);
 }
-p, a, span, li{
+p, a, span, li, input, textarea, legend{
     font-size: 1rem;
+    color: var(--text-color);
 }
 li{
     text-decoration: none;
     list-style: none;
+    color: var(--text-color);
+}
+
+.hide{
+    display: none;
 }

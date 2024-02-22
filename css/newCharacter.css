@@ -1,0 +1,43 @@
+#character-new {
+
+}
+.inputForm {
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+}
+.input {
+  position: relative;
+}
+.inputLabel {
+  transition: transform 120ms ease-in;
+  font-weight: bold;
+  line-height: 1.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 6px 4px;
+  margin: 10px 4px;
+  white-space: nowrap;
+  transform: translate(0, 0);
+  transform-origin: 0 0;
+  background: blue;
+}
+.inputField {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 2px solid currentColor;
+  padding: 12px 8px;
+  background: transparent;
+  border-radius: 4px;
+}
+.inputField:focus + .inputLabel,
+.inputField:not(:placeholder-shown) + .inputLabel {
+  transform: translate(0.25rem, -65%) scale(0.8);
+  color: var(--main-brand-color);
+}
+.inputField:focus {
+  outline: none;
+  border-color: blue;
+}

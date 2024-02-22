@@ -1,4 +1,5 @@
-@import url(general.css);
+@import url(./general.css);
+@import url(./newCharacter.css);
 
 .menuUL{
     display: flex;
